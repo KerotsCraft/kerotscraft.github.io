@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Minecraft Server</title> 
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: #FA6324; /* Changed the color to #FA6324 */
+      font-size: 16px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: black;
+      color: #FA6324; /* Changed the color to #FA6324 */
+      padding: 10px 0; /* Reduce the top and bottom padding to reduce the height */
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: 60px; /* Set the desired height */
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center items vertically within the container */
+      justify-content: center; /* Center items horizontally within the container */
+    }
+
+      header h1 {
+      margin: 0;
+      font-size: 40px; /* Increase the font size for the heading */
+    }
+
+    nav {
+      margin-top: 10px; /* Reduce the top margin to reduce the height */
+      text-align: center;
+      position: sticky;
+      top: 60px; /* Offset the nav to prevent overlap with the header */
+      z-index: 100;
+      height: 40px; /* Set the desired height */
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center items vertically within the container */
+      justify-content: center; /* Center items horizontally within the container */
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex; /* Use flexbox to align items */
+      align-items: center; /* Center items vertically within the container */
+      justify-content: center; /* Center items horizontally within the container */
+    }
+
+    nav ul li {
+      margin: 0 15px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    nav ul li a {
+      color: #FA6324; /* Changed the color to #FA6324 */
+      text-decoration: none;
+      font-size: 18px; /* Adjust the font size to fit within the reduced height */
+    }
+
+    .hero {
+      background-color: #FA6324; /* Changed the color to #FA6324 */
+      background-size: cover;
+      background-position: center;
+      color: black;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .hero h2 {
+      font-size: 64px;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .about p {
+      line-height: 1.8;
+      font-size: 20px;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .service-item {
+      background-color: black;
+      color: #FA6324; /* Changed the color to #FA6324 */
+      border-radius: 5px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin: 20px;
+      padding: 30px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .service-item img {
+      width: 80px;
+    }
+
+    .service-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-item h3 {
+      font-size: 24px;
+    }
+
+    .custom-plugin-bg {
+      background-color: #FA6324; /* Changed the color to #FA6324 */
+      color: black;
+    }
+
+    footer {
+      background-color: black;
+      color: #FA6324; /* Changed the color to #FA6324 */
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Media Queries */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 20px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .about p {
+        font-size: 16px;
+      }
+
+      .service-item h3 {
+        font-size: 20px;
+      } 
+    :focus {
+    outline: none;
+  }
+
+  /* Hover effect on the image */
+  .container img:hover,
+  .container img:focus {
+    transform: scale(1.2); /* Increase the scale to 1.2 on hover and focus */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition */
+  }
+  </style> 
+ </head> 
+ <body> 
+  <header style="background-color: black; color: #FA6324; padding: 20px 0; text-align: center; position: sticky; top: 0; z-index: 100; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 0px;">
+  <div class="container">
+    <img src="your-icon.png" alt="Icon" width="300" height="60">
+  </div>
+</header>
+  <section id="home" class="hero"> 
+   <div class="container"> 
+    <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+    <h2>Join our community!</h2> 
+    <p>Join us now and let's create unforgettable memories together. Get ready to dig, build, and conquer in the ultimate Minecraft experience. See you in the game!</p> <a href="#services" class="btn">Learn More</a> 
+   </div> 
+  </section> 
+  <section id="about" class="about"> 
+  <div class="container"> 
+    <h2>About Us</h2> 
+    <p>Welcome to Kerots Craft Minecraft Server, a world of boundless possibilities and creativity! Join our warm and inclusive community, where players of all ages and skills can come together to share their love for the game. Explore custom features, build magnificent structures, embark on epic quests, and enjoy thrilling events. Fairness, respect, and camaraderie are our top priorities. Join us now and become part of our ever-growing family. Let your adventure begin!</p> 
+  </div> 
+</section> 
+
+<section id="services" class="services"> 
+  <div class="container"> 
+    <h2>Our Services</h2> 
+    <div class="service-item custom-plugin-bg"> 
+      <img src="icon1.png" alt="Service Icon"> 
+      <h3>Modded Vanilla</h3> 
+      Step into the extraordinary world of our modded vanilla Minecraft server! 🚀🌳 Discover a fresh twist on the classic vanilla experience with thrilling mods that enhance gameplay, create new adventures, and bring endless possibilities.
+    </div> 
+    <div class="service-item custom-plugin-bg"> 
+      <img src="icon2.png" alt="Service Icon"> 
+      <h3>24/7 Online</h3>
+      Our server is 24/7 online, 🕛 ensuring non-stop fun and excitement for players from all corners of the Philippines. Whether it's day or night, rain or shine, we're always here to provide an immersive and seamless experience.
+    </div> 
+    <div class="service-item custom-plugin-bg"> 
+      <img src="icon3.png" alt="Service Icon"> 
+      <h3>Exclusive for Bedrock</h3> 
+      Exclusively for Bedrock users! 💎 Dive into an incredible Bedrock experience with us. Enjoy the adventure! 🏰🌟
+    </div> 
+  </div> 
+</section> 
+<section id="join-now" class="join-now">
+  <div class="container">
+    <center><h2>Join Now?</h2></center>
+    <center><p>Click the CARROT below to start your adventure!</p></center>
+    <div style="display: flex; justify-content: center;">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfFCkUjUYn_yhpXjL06BssMHY2X78jQ6uykNRkrBc3eLseZtQ/viewform?usp=send_form" class="btn join-btn">
+        <center><img src="join_button_image.png" alt="Join Now" width="200" height="200" style="outline: none;">
+      </a>
+    </div>
+  </div>
+</section>
+<footer style="background-color: #FA6324; color: black; padding: 20px 0; text-align: center; position: sticky; top: 0; z-index: 100; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 0px;">
+  <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+    <img src="your-icon.png" alt="Icon" width="120" height="25" style="margin-bottom: 10px;">             
+    <p style="margin: 0;">© 2023 Kerots Craft Vanilla. All rights reserved.</p> 
+  </div> 
+</footer>
+</head>
+</html>
