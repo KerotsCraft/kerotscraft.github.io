@@ -1,1 +1,1 @@
-# kerotscraftvanilla
+# vanilla
