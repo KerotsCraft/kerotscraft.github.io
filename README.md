@@ -1,1 +1,1 @@
-# kerotscraft.github.io
+# kerotscraftvanilla.github.io
