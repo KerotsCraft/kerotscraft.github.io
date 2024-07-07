@@ -82,14 +82,43 @@
     }
 
     .hero {
-     background-image: url('your-image-url.png');
-     background-size: cover;
-     background-position: center;
-     color: #E7A011;
-     text-align: center;
-     padding: 20px 0;
- }
+      background-image: url('your-image-url.png');
+      background-size: cover;
+      background-position: center;
+      color: #E7A011;
+      text-align: center;
+      padding: 20px 0;
+      animation: moveUp infinite linear 60s;
+    }
 
+    .social-media {
+      background-image: url('your-image-url.png');
+      background-size: cover;
+      background-position: center;
+      color: #E7A011;
+      text-align: center;
+      padding: 5px 0;
+      margin-top: -60px; /* Adjust this value to control the vertical spacing */
+      margin-bottom: -25px;
+      animation: moveUpSlower infinite linear 120s; /* Add a slower animation here */
+    }
+
+    @keyframes moveUp {
+      0% {
+        background-position-y: 100%;
+      }
+      100% {
+        background-position-y: 0;
+      }
+    }
+
+    @keyframes moveUpSlower {
+      0% {
+        background-position-y: 100%;
+      }
+      100% {
+        background-position-y: 0;
+      }
     }
 
     .hero h2 {
@@ -206,79 +235,66 @@
       left: 0;
       width: 100%;
       height: 100%;
-}
+    }
 
-/* For the social media icons */
-.social-media {
-  background-image: url('your-image-url.png');
-  color: #E7A011;
-  text-align: center;
-     background-size: cover;
-     background-position: center;
-     color: #E7A011;
-     text-align: center;
-     padding: 5px 0;
-  margin-top: -60px; /* Adjust this value to control the vertical spacing */
-  margin-bottom:-25px;0;0;
-}
+    /* For the social media icons */
+    .social-icons {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-.social-icons {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+    .social-icons li {
+      margin: 0 10px;
+    }
 
-.social-icons li {
-  margin: 0 10px;
-}
+    .social-icons li a img {
+      width: 70px;
+      height: 70px;
+      display: block;
+    }
 
-.social-icons li a img {
-  width: 70px;
-  height: 70px;
-  display: block;
-}
+    /* Additional styling for the icons, such as hover effects */
+    .social-icons li a img:hover {
+      transform: scale(1.2);
+      transition: transform 0.2s ease-in-out;
+    }
 
-/* Additional styling for the icons, such as hover effects */
-.social-icons li a img:hover {
-  transform: scale(1.2);
-  transition: transform 0.2s ease-in-out;
-}
-.photo-container {
-  overflow: hidden;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 10px; /* Add some padding around the photos */
-}
+    .photo-container {
+      overflow: hidden;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px; /* Add some padding around the photos */
+    }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center; /* Center the image within the slide */
-}
+    .swiper-slide {
+      display: flex;
+      justify-content: center; /* Center the image within the slide */
+    }
 
-.swiper-slide img {
-  width: 100%; /* Set the image width to 100% to make it responsive */
-  height: auto;
-  max-width: 90%; /* Ensure the image fits within the slide */
-  max-height: 500px; /* Set a maximum height for the images */
-  margin: 0 10px; /* Add margin to the left and right sides */
-  border-radius: 15px; /* Add border radius for rounded corners */
-}
+    .swiper-slide img {
+      width: 100%; /* Set the image width to 100% to make it responsive */
+      height: auto;
+      max-width: 90%; /* Ensure the image fits within the slide */
+      max-height: 500px; /* Set a maximum height for the images */
+      margin: 0 10px; /* Add margin to the left and right sides */
+      border-radius: 15px; /* Add border radius for rounded corners */
+    }
 
-/* Modern navigation buttons */
-.swiper-button-prev,
-.swiper-button-next {
-  display: none; /* Hide the navigation buttons */
-}
+    /* Modern navigation buttons */
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none; /* Hide the navigation buttons */
+    }
 
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-  .swiper-slide img {
-    max-height: 700px; /* Adjust the maximum height for smaller screens */
-  }
-}
-
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 768px) {
+      .swiper-slide img {
+        max-height: 700px; /* Adjust the maximum height for smaller screens */
+      }
+    }
   </style> 
 </head> 
 <body> 
