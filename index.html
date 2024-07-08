@@ -98,22 +98,37 @@
       background-image: url('background.gif');
       background-size: cover;
       background-position: center;
-      opacity: 0.4;
+      opacity: 0.5;
       z-index: -1;
     }
 
-    .social-media {
-      background-image: url('your-image-url.png');
-      background-size: cover;
-      background-position: center;
-      color: #E7A011;
-      text-align: center;
-      padding: 5px 0;
-      margin-top: -60px; /* Adjust this value to control the vertical spacing */
-      margin-bottom: -25px;
-      animation: moveUpSlower infinite linear 380s; /* Add a slower animation here */
-    }
+.social-media {
+  position: relative;
+  color: #E7A011;
+  text-align: center;
+  padding: 5px 0;
+  margin-top: -60px;
+  margin-bottom: -25px;
+  animation: moveUpSlower infinite linear 380s;
+  background-image: linear-gradient(rgba(62, 14, 14, 0.5), rgba(62, 14, 14, 0.5)), url('your-image-url.png'); /* Adjust the rgba values to control opacity */
+  background-size: cover;
+  background-position: center;
+}
 
+.social-media::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('your-image-url.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5; /* Set opacity to 0.5 for 50% visibility */
+  z-index: -1;
+}
+}
     @keyframes moveUp {
       0% {
         background-position-y: 100%;
@@ -354,8 +369,8 @@
     </div>      
   </section>
     <section id="social-media" class="social-media"><br><br>
-        <center><h2>Discord Community</h2></center>
-      <center><p>Click the icon below to join our Discord.</p></center>
+        <center><h2>Social Community</h2></center>
+      <center><p>Click the icon below to join our Discord server.</p></center>
       <ul class="social-icons">
         <li><a href="https://discord.com/invite/kerotscraft-community-r-1135060663245479976"><img src="discord.png" alt="Discord"></a></li>
       </ul>
